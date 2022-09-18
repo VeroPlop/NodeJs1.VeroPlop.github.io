@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= titulo %></title>
+
+    <!--Enlace de header-->
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <!--Enlace a barra de navegación-->
+    <%- include('partials/navigation') %>
+
+   <!--Contenido central-->
+   <header class="container  vh-100 d-flex justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+
+        <img src="/imagenes/MiIcono.png" class="w-50 m-auto animated bounceIn" alt="Website Logo">
+        
+        <h3 class="display-1 my-5 text-uppercase">Very Plop</h3>
+        <a href="/about" class="btn btn-primary w-25">Acerca de</a>
+    </div> 
+   </header>
+
+   <!--Enlace del footer-->
+    <%- include('partials/footer') %>
+</body>
+</html>
